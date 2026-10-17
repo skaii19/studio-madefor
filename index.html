@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>homepage</title>
 </head>
 <body>
-
     <!-- Nav bar -->
     <header>
-        <div>
-            <!-- Nav bar logo goes here-->
-          
-            <span>STUDIO made for&mdash;</span>
+        <div id="nav_logo">
+            <img id="nav_bar_logo" src="logo/logo_7.png" alt="logo7">
         </div>
-        <nav>
-            <ul>
-                <!-- hyperlinks go here -->
-                <li><a href="#1">HOME</a></li>
-                <li><a href="#2">ABOUT US</a></li>
-                <li><a href="#3">GALLERY</a></li>
-                <li><a href="#4">CONTACT US</a></li>
-            </ul>
-        </nav>
+        <div id="nav_links">
+            <nav>
+                <ul>
+                    <!-- hyperlinks go here -->
+                    <li><a href="#1" class="button">HOME</a></li>
+                    <li><a href="#2" class="button">ABOUT US</a></li>
+                    <li><a href="#3" class="button">GALLERY</a></li>
+                    <li><a href="#4" class="button">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- big logo section -->
         <section id="title">
             <div>
-                <!-- Big logo goes here-->
-                
-                <h1>STUDIO made for&mdash;</h1>
-                <p>&ldquo;Where people shape spaces, and spaces shape lives.&rdquo;</p>
+                <div id="main_logo_div">
+                    <img id="main_logo" src="logo/logo_8.png" alt="logo8">
+                </div>
+                <p id="quote">"Where people shape spaces, and spaces shape lives."</p>
             </div>
         </section>
 
         <section id="made-for">
-            <div>
-                <h2>Made For -</h2>
-                <ul>
+            <div id="made-for_text">
+                <h1>Made For -</h1>
+                <div class="line"></div>
+                <ul id="content_list">
                     <li>THE FIRST HOME.</li>
                     <li>THE GROWING FAMILY.</li>
                     <li>THE SOLO RENTER.</li>
@@ -51,63 +52,83 @@
                     <li>THE QUIET MOMENTS</li>
                 </ul>
             </div>
-            <div>
-                <!-- Picture beside the list goes here -->
-
+            <div id="made-for_img">
+                <!--insert image-->
+                !! Placeholder !!
             </div>
         </section>
 
         <section id="pana-panahon">
-            <h2>&ldquo;Pana-Panahon&rdquo;</h2>
-            <p>
-                <strong>STUDIO MADE FOR-</strong> draws inspiration from the changing weather of the Philippines, 
-                particularly Amihan and Habagat, as a reflection of how people move through different states in 
-                life. The unfinished dash represents the people and purpose that complete each project.
-            </p>
-            <p>Every space is made for something different, shaped by the people who experience it.</p>
 
-            <div>
-                <h3>Amihan</h3>
-                <p>represents movement, clarity, and energy, translated into spaces that encourage focus, interaction, and productivity.</p>
+            <div id="asset1">
+                <img id="logo_design1" src="logo/logo_1.png" alt="logo1">
+            </div>
+            <div id="asset2">
+                <img id="logo_design1" src="logo/logo_1.png" alt="logo1">
             </div>
 
-            <div>
-                <h3>Habagat</h3>
-                <p>represents pause, comfort, and reflection, translated into spaces that allow people to rest, recharge, and slow down.</p>
-            </div>
+            <div id="content2">
+                <h2 id="h2_light_bg">"Pana-Panahon"</h2>
+                <p class="light_bg">
+                    <strong>STUDIO MADE FOR-</strong> draws inspiration from the changing weather of the Philippines, 
+                    particularly Amihan and Habagat, as a reflection of how people move through different states in 
+                    life. The unfinished dash represents the people and purpose that complete each project.
+                </p>
+                <br>
+                <p class="light_bg">
+                    Every space is made for something different, shaped by the people who experience it.
+                </p>
+                <br>
+                <br>
+                <div id="content3">
+                    <h3>Amihan</h3>
+                    <p class="light_bg">represents movement, clarity, and energy, translated into spaces that encourage focus, interaction, and productivity.</p>
 
-            <p>Together, they reflect the belief that spaces should adapt to people, because we are never the same every day.</p>
+                    <br>
+                    <br>
+
+                    <h3>Habagat</h3>
+                    <p class="light_bg">represents pause, comfort, and reflection, translated into spaces that allow people to rest, recharge, and slow down.</p>
+
+                    <br>
+                    <br>
+
+                    <p class="light_bg"><strong>Together, they reflect the belief that spaces should adapt to people, because we are never the same every day.</strong></p>
+                </div>
+            </div>
         </section>
 
         <section id="weather">
-            <h2>THE WEATHER</h2>
-            <p>Amihan and Habagat represent two contrasting conditions: movement and pause.</p>
+            <div class="big_left"><h2>THE WEATHER</h2></div>
+            <div class="text_right"><p>Amihan and Habagat represent two contrasting conditions: movement and pause.</p></div>
         </section>
 
         <section id="human">
-            <h2>THE HUMAN</h2>
-            <p>Like the weather, people are constantly changing. We move between moments of energy, focus, rest, and reflection.</p>
+            <div class="text_left"><p class="dark_bg">Like the weather, people are constantly changing. We move between moments of energy, focus, rest, and reflection.</p></div>
+            <div class="big_right"><h2 class="dark_bg">THE HUMAN</h2></div>
         </section>
 
         <section id="space">
-            <h2>THE SPACE</h2>
-            <p>This became the idea that spaces should respond to different human states and needs, rather than being designed for only one way of living.</p>
+            <div class="big_left"><h2>THE SPACE</h2></div>
+            <div class="text_right"><p>This became the idea that spaces should respond to different human states and needs, rather than being designed for only one way of living.</p></div>
         </section>
 
         <section id="brand">
-            <h2>THE BRAND</h2>
-            <p>From this came STUDIO MADE FOR&mdash;. The unfinished phrase leaves space for every project, person, and purpose to complete it differently.</p>
+            <div class="text_left"><p class="dark_bg">From this came <strong>STUDIO MADE FOR&mdash;</strong>. The unfinished phrase leaves space for every project, person, and purpose to complete it differently.</p></div>
+            <div class="big_right"><h2 class="dark_bg">THE BRAND</h2></div>
         </section>
-    </br>
-    </br>
+
+        <div id="idk"><h2>THE WEATHER CHANGES. <br> SO DO WE. <br> SO SHOULD THE SPACES MADE FOR US.</h2></div>
+
     </main>
 
      <!-- footer -->
     <footer>
-        <div>
-          
-            <span>STUDIO made for&mdash;</span>
-            <h2>LEGASPI, MAKATI VILLAGE</h2>
+        <div id="footer_div">
+            <!--PLACEHOLDER | Logo not in given assets-->
+            <div id="footer_img"><img src="logo/logo_8.png"></div>
+            <h2 id="footer_text">LEGASPI, MAKATI VILLAGE</h2>
+            <p id="est">EST. 2026</p>
         </div>
     </footer>
 
