@@ -1,0 +1,301 @@
+
+
+
+@font-face {
+    font-family: 'Anaktoria';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Anaktoria'), url('fonts/Anaktoria.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Sailors';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Sailors'), url('fonts/sailors-slant.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('JosefinSans'), url('fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
+}
+main {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#about-studio {
+    width: 100%;
+    background-color: var(--neutral-1, #F8F5EF);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    position: relative; /* Allows absolute positioning*/
+    
+}
+#about_the_studio {
+    color: var(--neutral-3, #321B14);
+    text-align: center;
+    font-family: "Anaktoria", serif;
+    font-size: clamp(36px, 6.5vw, 78px);;
+    font-style: italic;
+    font-weight: 550px;
+    line-height: normal;
+    margin: 0;
+    white-space: nowrap;/* Keeps "About The Studio" strictly on 1 line */
+}
+#green_left {
+    position: absolute;
+    top: -620px;      
+    left: -800px;     
+    z-index: 1;       
+    pointer-events: none;
+}
+#green_left img {
+    width: 1400px; 
+    height: auto;
+    display: block;
+}
+#green_right {
+    position: absolute;
+    top: -500px;                    
+    right: -750px;                  
+    transform: rotate(180deg); 
+    z-index: 1;                    
+    pointer-events: none;
+}
+
+#green_right img {
+    width: 1400px;                
+    height: auto;
+    display: block;
+}
+/* The Green Box around the text */
+.about-banner {
+    display: inline-flex;   
+    padding: 10px;       /* Shrinks the box to fit around the text */
+    background-color: #B2B17D;     
+    padding:clamp(10px, 2vw, 20px) clamp(25px, 9vw, 150px);     
+    position: relative;
+    z-index: 2;        /* Keeps banner text on top of decorative background graphics */
+}
+
+#studio_description_section {
+    width: 100%;
+    padding: 20px 60px 1px 60px;
+    box-sizing: border-box;
+    background-color: var(--neutral-1, #F8F5EF);
+}
+
+.description-container {
+    max-width: 1400px;     
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.text-column {
+    flex: 1 1 50%;           
+    max-width: 700px;        
+    text-align: left;
+}
+.firm_name h4 {
+    font-family: "Anaktoria", serif;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 16px 0;
+}
+
+.firm_name .word-studio {
+    color: var(--primary-1, #974316);
+    font-style: italic; 
+}
+
+.firm_name .word-made {
+    color: var(--primary-2, #ABAA74);
+}
+
+.firm_name .word-for {
+    color: var(--primary-3, #82ABBC);
+}
+
+.text-column p {
+    color: var(--neutral-3, #321B14);
+    text-align: justify;
+    font-family: 'JosefinSans';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    width: 100%;
+}
+
+.logo-column {
+    flex: 0 0 50%;         
+    display: flex;
+    justify-content: right;
+}
+
+.side-logo {
+    width: 700px;           
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#vision_mission_section {
+    position: relative;
+    width: 100%;
+    background-color: var(--neutral-3, #321B14);
+    padding: 150px 80px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px 60px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#vm_logo_top {
+    grid-column: 1;
+    grid-row: 1;
+    position: absolute;
+    top: -800px;
+    left: -500px;
+    width:  1400px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#vm_logo_top img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.vision-block {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.mission-block {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+#vm_logo_bottom {
+    grid-column: 2;
+    grid-row: 2;
+    position: absolute;
+    bottom: -700px;
+    right: -435px;
+    width: 1500px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#vm_logo_bottom img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vm-block h4 {
+    font-family: "Anaktoria", serif;
+    font-size: clamp(48px, 5vw, 64px);
+    font-style: italic;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0 0 12px 0;
+}
+
+.vm-block p {
+    font-family: 'JosefinSans', sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #F8F5EF;
+    margin: 0;
+    text-align: left;
+}
+
+#location_section {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    background-color: var(--neutral-1, #F8F5EF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.location-stroke-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.location-stroke-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.location-box {
+    position: relative;
+    z-index: 2;
+    background-color: #F1ECE1;
+    padding: 24px 80px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#location_title {
+    font-family: "Anaktoria", serif;
+    font-size: clamp(42px, 5vw, 64px);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--primary-1, #974316);
+    margin: 0;
+    line-height: 1;
+}
+
+#location_address {
+    font-family: "JosefinSans", sans-serif;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--neutral-3, #321B14);
+    margin: 0;}
