@@ -147,10 +147,13 @@ body {
 
 /*PLACEHOLDER*/
 #made-for_img {
-    height: 500px;
-    background-color: #fff;
-    width: 70%;
-    margin: 20px auto;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    margin: 0;
+    max-height: none;
+    object-fit: cover;
+    display: block;
 }
 
 #content_list li {
