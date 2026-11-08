@@ -1,8 +1,3 @@
-#nav_links a.active {
-    background-color: #82abbc;
-    color: #f8f5ef;
-}
-
 #header_bg {
     position: relative;
     height: 360px;
@@ -37,20 +32,68 @@
 }
 
 .label_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height:40px;
+    border: none;
+    cursor: pointer;
     background-color: #974316;
     color: #fff;
-    font-family: "Anaktoria";
+    font-family: "Sailors";
     font-style: italic;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
-    padding: 3px 0;
+    padding: 8px 0;
+    transition: background-color 0.2s ease;
 }
+
+.label_bar:hover,
+.label_bar:focus-visible {
+    background-color: #b0541f;
+}
+
+.label_bar:focus-visible {
+    outline: 2px solid #f1e6d9;
+    outline-offset: -4px;
+}
+
+.space_panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.45s ease;
+    background-color: #f1e6d9;
+}
+
+.space_panel.open {
+    grid-template-rows: 1fr;
+}
+
+.space_inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
 
 .space_img {
     display: block;
     width: 100%;
     max-width: 1000px;
     max-height: none;
-    height: auto;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #header_bg { height: 220px; }
+    .label_bar { font-size: 14px; }
+    .space_img { aspect-ratio: 4 / 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .space_panel,
+    .label_bar::after { transition: none; }
 }
