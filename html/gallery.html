@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Studio Made For&ndash;</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+</head>
+
+<body>
+    <header>
+        <div id="nav_logo">
+            <img id="nav_bar_logo" src="../assets/logo_assets/navLogo.png" alt="Logo Nav Bar Version">
+        </div>
+        <div id="nav_links">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="button">HOME</a></li>
+                    <li><a href="aboutUs.html" class="button">ABOUT US</a></li>
+                    <li><a href="gallery.html" class="button active">GALLERY</a></li>
+                    <li><a href="contactUs.html" class="button">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="header_bg">
+            <img src="../assets/website_assets/clientLounge.JPG" alt="The Office interior">
+            <h1>The Office</h1>
+        </section>
+
+        <section id="reception" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="reception_panel">Reception</button>
+            <div class="space_panel" id="reception_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/reception.JPG" alt="Reception" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="mainLounge" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="mainLounge_panel">Main Lounge</button>
+            <div class="space_panel" id="mainLounge_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/mainLounge.JPG" alt="Main Lounge" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="soloFocus" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="soloFocus_panel">Solo Focus Rooms</button>
+            <div class="space_panel" id="soloFocus_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/soloFocus.JPG" alt="Solo Focus Room" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="meetingRoom1" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="meetingRoom1_panel">Meeting Room 1</button>
+            <div class="space_panel" id="meetingRoom1_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/meetingRoom1.JPG" alt="Meeting Room 1" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="meetingRoom2" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="meetingRoom2_panel">Meeting Room 2</button>
+            <div class="space_panel" id="meetingRoom2_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/meetingRoom2.JPG" alt="Meeting Room 2" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="matLib" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="matLib_panel">Material Library</button>
+            <div class="space_panel" id="matLib_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/matLib.JPG" alt="Material Library" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="deptOffice1" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="deptOffice1_panel">Department Office 1</button>
+            <div class="space_panel" id="deptOffice1_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/deptOffice1.JPG" alt="Department Office 1" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="deptOffice2" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="deptOffice2_panel">Department Office 2</button>
+            <div class="space_panel" id="deptOffice2_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/deptOffice2.JPG" alt="Department Office 2" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="ceoOffice" class="space">
+            <button class="label_bar" type="button" aria-expanded="false" aria-controls="ceoOffice_panel">CEO Office</button>
+            <div class="space_panel" id="ceoOffice_panel">
+                <div class="space_inner">
+                    <img class="space_img" src="../assets/website_assets/ceoOffice.JPG" alt="CEO Office" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer_left"><img src="../assets/logo_assets/logo_l.png" alt=""></div>
+        <div id="footer_div">
+            <h1 id="footer_name">Studio made for&mdash;</h1>
+            <h2 id="footer_text">LEGASPI, MAKATI VILLAGE</h2>
+            <p id="est">EST. 2026</p>
+        </div>
+        <div id="footer_right"><img src="../assets/logo_assets/logo_r.png" alt=""></div>
+    </footer>
+
+    <script>
+        const perImg = false;
+
+        const bars = document.querySelectorAll('.label_bar');
+
+        bars.forEach(bar => {
+            bar.addEventListener('click', () => {
+                const panel = document.getElementById(bar.getAttribute('aria-controls'));
+                const willOpen = bar.getAttribute('aria-expanded') !== 'true';
+
+                if(perImg && willOpen){
+                    bars.forEach(other => {
+                        other.setAttribute('aria-expanded', 'false');
+                        document.getElementById(other.getAttribute('aria-controls')).classList.remove('open');
+                    });
+                }
+
+                bar.setAttribute('aria-expanded', willOpen);
+                panel.classList.toggle('open', willOpen);
+            });
+        });
+    </script>
+</body>
+</html>
