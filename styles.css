@@ -39,8 +39,16 @@ img {
 
 #nav_logo {
     float: left;
-    width: 125px;
+    width: auto;
     height: 125px;
+}
+
+#nav_logo img {
+    display: block;
+    height: 125px;
+    width: auto;
+    max-width: none;
+    max-height: none;
 }
 
 #nav_links{
