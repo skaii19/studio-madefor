@@ -24,6 +24,13 @@
     src: local('JosefinSans'), url('../fonts/JosefinSans-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Barlow'), url('../fonts/BarlowSemiCondensed-semibold.ttf') format('truetype');
+}
+
 header {
     position: relative;
     height: 125px;
