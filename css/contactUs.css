@@ -61,6 +61,7 @@
 }
 
 .hero-content p {
+    font-family: 'Barlow';
     margin-top: 10px;
     font-weight: 580;
     font-size: 25px;
@@ -80,7 +81,7 @@
     grid-template-columns: 0.95fr 1.2fr;
     padding: 50px 50px;
 }
-.contact-panel p, li {
+.contact-panel p, .contact-panel li {
     font-family: 'Barlow';
     font-size: 1.3rem;
     color: #974316;
@@ -179,7 +180,6 @@
 .contact-form textarea::placeholder {
     color: rgba(50, 27, 20, 0.8);
     opacity: 0.8;
-    font-family: 'Barlow';
 }
 
 .contact-form textarea {
