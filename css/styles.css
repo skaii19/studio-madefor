@@ -26,9 +26,9 @@
 
 @font-face {
     font-family: 'Barlow';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Barlow'), url('../fonts/BarlowSemiCondensed-semibold.ttf') format('truetype');
+    font-style: semi-condensed;
+    font-weight: semi-bold;
+    src: local('Barlow'), url('../fonts/Barlow-SemiCondensed-SemiBold.ttf') format('truetype');
 }
 
 header {
